@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
+
+:root{
+    /* ----------- Font ----------- */
+        /* Style Font */
+        --ff-primary: "Poppins",sans-serif;
+        --ff-secondary: 'Playfair Display', serif;
+
+        /* Font Color */
+        --fc-primary: #ffffff;
+        --fc-primary-alt: #828282;
+        --fc-secondary: #1b1b1c;
+
+        /* Font Size */
+        --fs-1: 65px;
+        --fs-2: 30px;
+        --fs-3: 20px;
+        --fs-4: 18px;
+        --fs-5: 15px;
+
+        /* Font Weight */
+        --fw-black: 900;
+        --fw-bold: 700;
+        --fw-medium: 500;
+        --fw-regular: 400;
+    /* ---------------------------- */
+
+    /* ----- Background Color ----- */
+        /* Background */
+        --bg-primary: #ffffff;
+        --bg-primary-alt: #2f5649;
+        --bg-secondary: #c4c4c4;
+        --bg-news: #056DFA;
+        --bg-container: #f5f5f5;
+        --bg-circle: #2f5649;
+
+        /* Button */
+        --bg-logButton: #ff342b;
+        --bg-regButton: #30c04f;
+        --bg-subsButton: #30c04f;
+    /* ---------------------------- */
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--fm-primary);
+        background-color: var(--bg-container) !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+/* Header */
+.news{
+    background: var(--bg-secondary);
+    height: 32px;
+    overflow: hidden;
+    position: relative;
+}
+
+.news .newsinfo {
+    background: var(--bg-news);
+    color: #ffffff;
+    font-size: var(--fs-5);
+    font-weight: var(--fw-medium);
+    border-radius: 0px 50px 50px 0px;
+    padding: 0 20px;
+    position: absolute;
+    left: 110px;
+    z-index: 1;
+}
+
+.news .newstgl{
+    background: var(--bg-news);
+    color: #ffffff;
+    font-size: var(--fs-5);
+    font-weight: var(--fw-medium);
+    border-radius: 50px 0px 0px 50px;
+    padding: 0 20px;
+    position: absolute;
+    right: 110px;
+    z-index: 1;
+}
+
+.run_text li{
+    margin-right: 90px;
+    display: inline-block;
+}
+
+/* .auto{
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* end Header */
+
+/* Navbar */
+.navbar{
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.logo{
+    width: 15rem;
+    margin-bottom: 5px;
+}
+
+.btn_nav{
+    margin-left: 20px;
+    color: var(--fc-primary);
+}
+
+.bg_msk,.bg_dftr{
+    color: var(--fc-primary);
+}
+
+.bg_msk,.bg_dftr{
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.bg_msk{
+    background-color: var(--bg-logButton);
+}
+
+.bg_dftr{
+    background-color: var(--bg-regButton);
+}
+
+.bg_msk:hover,.bg_dftr:hover{
+    color: var(--fc-primary);
+}
+
+/* Jumbotron */
+.jumbotron{
+    height: 700px;
+    width: 100%;
+}
+
+.jumbotron h1{
+    font-weight: var(--fw-black);
+    font-size: var(--fs-1);
+}
+
+.jumbotron p{
+    font-size: var(--fs-3);
+}
+
+.jumbotron-image {
+    background-image: url(assets/img/Group22.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Banner */
+.banner{
+    color: var(--fc-primary);
+    background-color: var(--bg-primary-alt);
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-bold);
+    text-align: center;
+    letter-spacing: 1em;
+    height: 4rem;
+    padding: 20px;
+}
+
+/* Alur */
+.alur{
+    margin: 5rem 0;
+    color: var(--fc-secondary);
+}
+
+.circle{
+    color: var(--fc-primary);
+    font-size: var(--fs-5);
+    background-color: var(--bg-circle);
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.card-title{
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-5);
+    color: var(--fc-secondary);
+}
+
+.card_alur{
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    padding: 5px;
+    height: 10rem;
+}
+
+.card-text{
+    font-size: var(--fs-5);
+}
+
+/*  */
+.judul{
+    font-weight: var(--fw-bold);
+    color: var(--fc-secondary);
+    font-size: var(--fs-3);
+}
+
+.deskrip{
+    font-weight: var(--fw-regular);
+    color: var(--fc-secondary);
+    font-size: var(--fs-5);
+}
+/*  */
+
+/* Banner Logo */
+.banner_logo{
+    margin: 5rem 0;
+}
+
+.bg_logo{
+    text-align: center;
+    height: 130px;
+    background-color: var(--bg-primary-alt);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+
+.logo_jrs img{
+    height: 90px;
+    margin: 20px 30px;
+}
+
+/* footer */
+footer{
+    background-color: var(--bg-primary-alt);
+    height: 19rem;
+    margin-top: 10rem;
+    color: white;
+}
+
+.logo_footer{
+    width: 120px;
+    margin: 0 25px;
+}
+
+/* formsubs */
+.form_subs{
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.btn_subs{
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: var(--bg-subsButton);
+    color: var(--fc-primary);
+}
+
+.container h5{
+    font-size: var(--fs-4);
+    font-weight: var(--fw-bold);
+}
+
+.container p{
+    font-size: var(--fs-5);
+}

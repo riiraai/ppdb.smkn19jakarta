@@ -1,0 +1,110 @@
+@media screen and (max-width:768px){
+    /* Header */
+    .news .newsinfo {
+        visibility: hidden;
+    }
+    
+    .news .newstgl{
+        visibility: hidden;
+    }
+
+    /* Navbar */
+    
+    .logo{
+        width: 13rem;
+    }
+
+    .btn_nav{
+        margin-top: 20px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    .bg_msk,.bg_dftr{
+        border-radius: 5px;
+        padding: 5px 20px;
+    }
+    
+    .bg_msk:hover,.bg_dftr:hover{
+        color: var(--fc-primary);
+    }
+    
+    /* Jumbotron */
+    .jumbotron h1{
+        font-size: 2rem;
+    }
+    
+    .jumbotron p{
+        font-size: 1rem;
+        letter-spacing: normal;
+    }
+
+    /* Banner */
+    .banner{
+        height: 6.5rem;
+    }
+
+    /* Alur */
+
+    .row{
+        padding: 0 20px;
+    }
+    .circle{
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+    .card-title{
+        font-size: 10px;
+    }
+    
+    .card-text p{
+        font-size: 14px;
+    }
+
+    .card_alur{
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 0.25rem;
+        padding: 5px;
+        height: 10rem;
+    }
+
+    .deskrip{
+        margin: 0 25px;
+    }
+    
+    /* Banner Logo */
+    .banner_logo{
+        text-align: center;
+    }
+
+    .bg_logo{
+        margin: 0 20px;
+        height: 19rem;
+    }
+
+    .logo_jrs img{
+        height: 110px;
+        margin: 20px;
+    }
+
+    /* footer */
+    footer{
+        background-color: var(--bg-primary-alt);
+        height: 50rem;
+        margin-top: 0;
+        color: white;
+    }
+
+    .logo_footer{
+        margin: 0;
+    }
+
+    .container .credit{
+        font-size: 14px;
+    }
+
+    .alamat{
+        margin-top: 30px;
+    }
+}
